@@ -35,6 +35,15 @@ const resources = [
     image: "/images/planilha.jpg",
     imageAlt: "Imagem da planilha de marketing",
   },
+   {
+    title: "Google Docs da atividade",
+    description:
+      "Organize o orçamento, as estratégias, as metas e os cálculos da campanha.",
+    href: "https://docs.google.com/document/d/14rGmFeTrKD8G9sidsPMk9pKEIiVTOJ0X4smMx35_Emc/edit?usp=sharing",
+    category: "Atividade",
+    image: "/images/googledocs.jpeg",
+    imageAlt: "Imagem do google docs de marketing",
+  },
 ];
 
 const games = [
@@ -242,7 +251,25 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-3">
+         
+        </section>
+
+        <section className="mb-16">
+          <SectionHeading
+            eyebrow="Materiais e ferramentas"
+            title="Comece por aqui"
+            description="Acesse os recursos necessários para pesquisar, definir a persona e organizar a campanha de marketing."
+          />
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {resources.map((resource) => (
+              <ResourceCard key={resource.title} {...resource} />
+            ))}
+          </div>
+        </section>
+
+
+ <div className="grid gap-4 sm:grid-cols-3">
             <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
               <p className="text-sm text-zinc-500">Etapa 1</p>
               <h3 className="mt-2 font-bold">Pesquise o público</h3>
@@ -265,21 +292,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
-
-        <section className="mb-16">
-          <SectionHeading
-            eyebrow="Materiais e ferramentas"
-            title="Comece por aqui"
-            description="Acesse os recursos necessários para pesquisar, definir a persona e organizar a campanha de marketing."
-          />
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {resources.map((resource) => (
-              <ResourceCard key={resource.title} {...resource} />
-            ))}
-          </div>
-        </section>
 
         <section className="mb-16">
           <SectionHeading
