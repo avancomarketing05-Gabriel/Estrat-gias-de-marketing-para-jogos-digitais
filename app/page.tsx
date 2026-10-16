@@ -35,7 +35,7 @@ const resources = [
     image: "/images/planilha.jpg",
     imageAlt: "Imagem da planilha de marketing",
   },
-   {
+  {
     title: "Google Docs da atividade",
     description:
       "Organize o orçamento, as estratégias, as metas e os cálculos da campanha.",
@@ -82,6 +82,42 @@ const games = [
     href: "https://store.steampowered.com/app/367520/Hollow_Knight/",
     image: "/images/hollow-knight.jpg",
     imageAlt: "Imagem do jogo Hollow Knight",
+  },
+  {
+    title: "Buckshot Roulette",
+    href: "https://store.steampowered.com/app/2835570/Buckshot_Roulette/?l=portuguese",
+    image: "/images/buckshot.jpg",
+    imageAlt: "Imagem do jogo Buckshot Roulette",
+  },
+  {
+    title: "Lethal Company",
+    href: "https://store.steampowered.com/app/1966720/Lethal_Company/",
+    image: "/images/lethal.jpg",
+    imageAlt: "Imagem do jogo Lethal Company",
+  },
+  {
+    title: "R.E.P.O.",
+    href: "https://store.steampowered.com/app/3241660/REPO/?l=portuguese",
+    image: "/images/repo.jpg",
+    imageAlt: "Imagem do jogo R.E.P.O.",
+  },
+  {
+    title: "Cult of the Lamb",
+    href: "https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/",
+    image: "/images/cultlamb.jpg",
+    imageAlt: "Imagem do jogo Cult of the lamb",
+  },
+  {
+    title: "MECCHA CHAMELEON",
+    href: "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/?l=portuguese",
+    image: "/images/mecha.jpg",
+    imageAlt: "Imagem do jogo MECCHA CHAMELEON",
+  },
+  {
+    title: "PEAK",
+    href: "https://store.steampowered.com/app/3527290/PEAK/",
+    image: "/images/peak.jpg",
+    imageAlt: "Imagem do jogo PEAK",
   },
 ];
 
@@ -241,17 +277,15 @@ export default function Home() {
               <p className="text-sm font-semibold uppercase tracking-widest text-blue-300">
                 Guia de recursos
               </p>
-              <h1 className="mt-3 max-w-3xl text-3xl font-bold text-white sm:text-5xl">
-                Estratégias de marketing para jogos digitais
+              <h1 className="mt-3 max-w-3xl text-4xl font-bold text-white sm:text-6xl">
+                Ferramentas e recursos
               </h1>
+
               <p className="mt-4 max-w-2xl text-sm leading-6 text-zinc-200 sm:text-lg sm:leading-8">
-                Ferramentas, materiais e jogos para pesquisar o mercado,
-                conhecer os jogadores e planejar uma campanha.
+                Estratégias de marketing para jogos digitais
               </p>
             </div>
           </div>
-
-         
         </section>
 
         <section className="mb-16">
@@ -268,30 +302,29 @@ export default function Home() {
           </div>
         </section>
 
-
- <div className="grid gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
-              <p className="text-sm text-zinc-500">Etapa 1</p>
-              <h3 className="mt-2 font-bold">Pesquise o público</h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-                Descubra tendências e entenda a persona.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
-              <p className="text-sm text-zinc-500">Etapa 2</p>
-              <h3 className="mt-2 font-bold">Planeje a campanha</h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-                Defina metas, canais, orçamento e cronograma.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
-              <p className="text-sm text-zinc-500">Etapa 3</p>
-              <h3 className="mt-2 font-bold">Analise os resultados</h3>
-              <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-                Compare os indicadores e justifique as decisões.
-              </p>
-            </div>
+        <div className="grid gap-4 sm:grid-cols-3">
+          <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+            <p className="text-sm text-zinc-500">Etapa 1</p>
+            <h3 className="mt-2 font-bold">Pesquise o público</h3>
+            <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              Descubra tendências e entenda a persona.
+            </p>
           </div>
+          <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+            <p className="text-sm text-zinc-500">Etapa 2</p>
+            <h3 className="mt-2 font-bold">Planeje a campanha</h3>
+            <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              Defina metas, canais, orçamento e cronograma.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+            <p className="text-sm text-zinc-500">Etapa 3</p>
+            <h3 className="mt-2 font-bold">Analise os resultados</h3>
+            <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+              Compare os indicadores e justifique as decisões.
+            </p>
+          </div>
+        </div>
 
         <section className="mb-16">
           <SectionHeading
@@ -370,6 +403,35 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        <div class="my-8 overflow-hidden rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50 to-white p-6 shadow-sm">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <span class="mb-2 inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700">
+                Material complementar
+              </span>
+
+              <h3 class="text-xl font-bold text-zinc-900">
+                Acesse o material de apoio
+              </h3>
+
+              <p className="mt-2 max-w-xl text-sm leading-6 text-zinc-600">
+                Consulte ferramentas, referências e jogos apresentados durante o
+                minicurso de Marketing de Jogos Digitais.
+              </p>
+            </div>
+
+            <a
+              href="https://canva.link/vcc0v81e8o5zecy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700"
+            >
+              Acessar material
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
 
         <section className="relative overflow-hidden rounded-3xl bg-zinc-900 text-white">
           <div className="relative aspect-[16/5] min-h-64">
