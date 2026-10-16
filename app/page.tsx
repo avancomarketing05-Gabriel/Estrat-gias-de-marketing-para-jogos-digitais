@@ -467,7 +467,7 @@ export default function Home() {
                 },
                 {
                   title: "Orube Game Studio",
-                  category: "Estúdio de jogos",
+                  category: "Estúdio de jogos e Referência em Vídeos",
                   description:
                     "Conheça o canal de um estúdio brasileiro de desenvolvimento de jogos.",
                   href: "https://www.youtube.com/c/OrubeGameStudio",
@@ -476,11 +476,31 @@ export default function Home() {
                 },
                 {
                   title: "RodDev",
-                  category: "Desenvolvimento",
+                  category: "Desenvolvimento e Referência em Vídeos",
                   description:
                     "Explore vídeos curtos e amplie suas referências sobre criação de jogos.",
                   href: "https://www.youtube.com/@RodDev/shorts",
                   image: "https://unavatar.io/youtube/@RodDev",
+                },
+
+                {
+                  title: "Attekita Dev",
+                  description:
+                    "Conheça a trajetória de Karol Attekita, desenvolvedora brasileira que criou jogos, fundou um estúdio e já trabalhou na Riot Games. Seus projetos e experiências mostram caminhos possíveis para construir uma carreira na indústria de games e tecnologia.",
+                  href: "https://www.youtube.com/@attekitadev",
+                  category: "Desenvolvimento",
+                  image: "https://unavatar.io/youtube/@attekitadev",
+                  imageAlt: "Canal Attekita Dev, de Karol Attekita",
+                },
+                {
+                  title: "guselect (@BotãoSelect)",
+                  description:
+                    "Mostra na prática o desenvolvimento de jogos independentes, compartilhando o processo de criação, os desafios e a evolução de seus projetos para inspirar novos desenvolvedores a criarem seus próprios jogos.",
+                  href: "https://www.youtube.com/channel/UCseB9OWWJSnlabGj2WPp0uQ",
+                  category: "Desenvolvimento de jogos",
+                  image: "https://unavatar.io/youtube/@BotãoSelect",
+                  imageAlt:
+                    "Canal do YouTube guselect, também conhecido como BotãoSelect",
                 },
               ].map((item) => (
                 <a
