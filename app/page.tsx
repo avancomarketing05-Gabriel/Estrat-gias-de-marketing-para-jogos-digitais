@@ -327,6 +327,166 @@ export default function Home() {
         </div>
 
         <section className="mb-16">
+          <div className="mb-7">
+            <p className="text-sm font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400">
+              Aprendizado e inspiração
+            </p>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
+              Canais e conteúdos recomendados
+            </h2>
+            <p className="mt-3 max-w-3xl leading-7 text-zinc-600 dark:text-zinc-400">
+              Conheça criadores e estúdios para buscar referências de marketing,
+              copywriting e desenvolvimento de jogos digitais.
+            </p>
+          </div>
+
+          <div className="mb-10">
+            <h3 className="mb-4 text-xl font-bold">Marketing e comunicação</h3>
+
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  title: "Tiago Tessmann",
+                  category: "Marketing digital",
+                  description:
+                    "Aprenda sobre tráfego pago, anúncios e estratégias digitais.",
+                  href: "https://www.youtube.com/@TiagoTessmann",
+                  image: "https://unavatar.io/youtube/@TiagoTessmann",
+                },
+                {
+                  title: "Adriano Gianini",
+                  category: "Google Ads",
+                  description:
+                    "Explore conteúdos sobre anúncios e otimização de campanhas.",
+                  href: "https://www.youtube.com/@AdrianoGianiniAds",
+                  image: "https://unavatar.io/youtube/@AdrianoGianiniAds",
+                },
+                {
+                  title: "Copywriting na prática",
+                  category: "Escrita persuasiva",
+                  description:
+                    "Confira o vídeo recomendado sobre comunicação e persuasão.",
+                  href: "https://www.youtube.com/watch?v=GoAbIBLAEns",
+                  image: "https://img.youtube.com/vi/GoAbIBLAEns/hqdefault.jpg",
+                },
+              ].map((item) => (
+                <a
+                  key={item.title}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:-translate-y-1 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
+                >
+                  <div className="aspect-[16/9] overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+                    <img
+                      src={item.image}
+                      alt={`Imagem de ${item.title}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                      {item.category}
+                    </span>
+                    <h4 className="mt-2 text-lg font-bold">{item.title}</h4>
+                    <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                      {item.description}
+                    </p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-blue-600 group-hover:underline dark:text-blue-400">
+                      Acessar conteúdo ↗
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-4 text-xl font-bold">
+              Desenvolvimento e marketing de jogos
+            </h3>
+
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  title: "André Young",
+                  category: "Referência em vídeo",
+                  description:
+                    "Assista ao vídeo selecionado e busque novas ideias para seus projetos.",
+                  href: "https://www.youtube.com/watch?v=SddCKQ3kKxg",
+                  image: "https://img.youtube.com/vi/SddCKQ3kKxg/hqdefault.jpg",
+                },
+                {
+                  title: "Too Dark Studios",
+                  category: "Vídeos curtos",
+                  description:
+                    "Explore vídeos e referências relacionadas ao universo dos jogos.",
+                  href: "https://www.youtube.com/@TooDarkStudios/shorts",
+                  image: "https://unavatar.io/youtube/@TooDarkStudios",
+                },
+                {
+                  title: "Orube Game Studio",
+                  category: "Estúdio de jogos",
+                  description:
+                    "Conheça o canal de um estúdio brasileiro de desenvolvimento de jogos.",
+                  href: "https://www.youtube.com/c/OrubeGameStudio",
+                  image:
+                    "https://i0.wp.com/dropsdejogos.uai.com.br/wp-content/uploads/sites/10/2024/01/orube-scaled.jpg?resize=950%2C543&ssl=1",
+                },
+                {
+                  title: "RodDev",
+                  category: "Desenvolvimento",
+                  description:
+                    "Explore vídeos curtos e amplie suas referências sobre criação de jogos.",
+                  href: "https://www.youtube.com/@RodDev/shorts",
+                  image: "https://unavatar.io/youtube/@RodDev",
+                },
+              ].map((item) => (
+                <a
+                  key={item.title}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:-translate-y-1 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
+                >
+                  <div className="aspect-[16/9] overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+                    <img
+                      src={item.image}
+                      alt={`Imagem de ${item.title}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-violet-600 dark:text-violet-400">
+                      {item.category}
+                    </span>
+                    <h4 className="mt-2 text-lg font-bold">{item.title}</h4>
+                    <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                      {item.description}
+                    </p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-blue-600 group-hover:underline dark:text-blue-400">
+                      Acessar canal ↗
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-5 dark:border-blue-900 dark:bg-blue-950/30">
+            <h3 className="font-bold">Como aproveitar as referências?</h3>
+            <p className="mt-2 text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+              Observe títulos, miniaturas, formatos de conteúdo, chamadas para
+              ação e estratégias de comunicação. Identifique ideias que possam
+              ser adaptadas ao público-alvo e aos objetivos da campanha do seu
+              jogo.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16">
           <SectionHeading
             eyebrow="Referências da atividade"
             title="Jogos mencionados no slide"
