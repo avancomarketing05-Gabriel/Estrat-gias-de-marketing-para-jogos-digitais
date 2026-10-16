@@ -1,35 +1,12 @@
 import Image from "next/image";
 
 const resources = [
-  {
-    title: "Google Forms",
-    description: "Crie os formulários para a atividade.",
-    href: "https://docs.google.com/forms/u/0/",
-    category: "Ferramenta",
-    image: "/images/google-forms.png",
-    imageAlt: "Imagem do Google Forms",
-  },
-  {
-    title: "Google Trends",
-    description:
-      "Pesquise tendências e descubra o interesse do público por jogos.",
-    href: "https://trends.google.com.br/trends/",
-    category: "Pesquisa",
-    image: "/images/google-trends.jpeg",
-    imageAlt: "Imagem do Google Trends",
-  },
-  {
-    title: "Persona de usuário",
-    description: "Consulte o material utilizado para definir o jogador ideal.",
-    href: "https://canva.link/x2aqz3xp6cqd52e",
-    category: "Atividade",
-    image: "/images/personausuario.png",
-    imageAlt: "Imagem do material de persona",
-  },
+  // 1. ATIVIDADES
+
   {
     title: "Planilha da atividade",
     description:
-      "Organize o orçamento, as estratégias, as metas e os cálculos da campanha.",
+      "Organize o orçamento, as estratégias, as metas e os cálculos da campanha de marketing do jogo.",
     href: "https://docs.google.com/spreadsheets/d/1iUqScEp2A0aMHlyMK_a6ZLo4T1VttMluf_0b2Msbm4E/edit?usp=sharing",
     category: "Atividade",
     image: "/images/planilha.jpg",
@@ -38,11 +15,74 @@ const resources = [
   {
     title: "Google Docs da atividade",
     description:
-      "Organize o orçamento, as estratégias, as metas e os cálculos da campanha.",
+      "Registre as ideias, as decisões estratégicas e o planejamento da campanha de marketing.",
     href: "https://docs.google.com/document/d/14rGmFeTrKD8G9sidsPMk9pKEIiVTOJ0X4smMx35_Emc/edit?usp=sharing",
     category: "Atividade",
     image: "/images/googledocs.jpeg",
-    imageAlt: "Imagem do google docs de marketing",
+    imageAlt: "Imagem do Google Docs de marketing",
+  },
+
+  {
+    title: "Persona de usuário",
+    description:
+      "Consulte o material utilizado para definir o jogador ideal, seus interesses, hábitos e necessidades.",
+    href: "https://canva.link/x2aqz3xp6cqd52e",
+    category: "Atividade",
+    image: "/images/personausuario.png",
+    imageAlt: "Imagem do material de persona",
+  },
+
+  // 2. PESQUISA
+  {
+    title: "Google Trends",
+    description:
+      "Pesquise tendências e descubra o interesse do público por jogos, gêneros e temas relacionados.",
+    href: "https://trends.google.com.br/trends/",
+    category: "Pesquisa",
+    image: "/images/google-trends.jpeg",
+    imageAlt: "Imagem do Google Trends",
+  },
+  {
+    title: "Google Forms",
+    description:
+      "Crie questionários para coletar opiniões, conhecer preferências e pesquisar o público-alvo.",
+    href: "https://docs.google.com/forms/u/0/",
+    category: "Pesquisa",
+    image: "/images/google-forms.png",
+    imageAlt: "Imagem do Google Forms",
+  },
+
+  // 3. ORGANIZAÇÃO
+  {
+    title: "Trello",
+    description:
+      "Organize as etapas da campanha, distribua tarefas, acompanhe prazos e reúna ideias em um quadro visual.",
+    href: "https://trello.com/",
+    category: "Organização",
+    image: "/images/treloo.png",
+    imageAlt: "Logo do Trello",
+  },
+
+  // 4. CRIAÇÃO DE CONTEÚDO
+  {
+    title: "CapCut",
+    description:
+      "Edite vídeos promocionais com cortes, legendas e efeitos para criar conteúdos atrativos para o jogo.",
+    href: "https://www.capcut.com/",
+    category: "Edição de vídeo",
+    image: "/images/capcut.png",
+    imageAlt: "Logo do CapCut",
+  },
+
+  // 5. INSPIRAÇÃO
+  {
+    title: "Pinterest",
+    description:
+      "Encontre referências visuais e ideias para artes, identidade visual, publicações e campanhas de divulgação de jogos.",
+    href: "https://www.pinterest.com/",
+    category: "Inspiração",
+    image: "/images/pinterest.jpeg",
+    imageAlt: "Logo do Pinterest",
   },
 ];
 
